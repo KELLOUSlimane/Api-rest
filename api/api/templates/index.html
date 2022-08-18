@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Slimane </title> <!-- Titre de la page -->
+		<meta charset="utf-8"> <!-- utf-8 pour les caractaire francais -->
+		<style>
+			body{
+				background-color : rgba(81, 109, 62, 0.137);
+			}
+		</style>
+	</head>
+
+	<body>
+		<h1> Manupilation de la base   </h1>  <!-- un titre de niveau 1-->
+		<a href="{% url 'add_entreprise'  %}"  > <button type="button" class="btn btn-secondary"> Ajouter une enteprise</button>  </a> </br>
+		<a href="{% url 'add_employes'  %}"  > <button type="button" class="btn btn-secondary"> Ajouter un employe</button>  </a> </br>
+		<a href="{% url 'sup_entreprise'  %}"  > <button type="button" class="btn btn-secondary"> Supp une enteprise</button>  </a> </br>
+        <a href="{% url 'sup_employes'  %}"  > <button type="button" class="btn btn-secondary"> Supp un employe</button>  </a> </br>
+        <a href="{% url 'opd_Entreprise'  %}"  > <button type="button" class="btn btn-secondary"> Modifier l'adresse de l'enteprise</button>  </a> </br>
+        <a href="{% url 'opd_employes'  %}"  > <button type="button" class="btn btn-secondary"> Modifer l'entreprise de l'employe</button>  </a> </br>
+        <a href="{% url 'affich_entreprise'  %}"  > <button type="button" class="btn btn-secondary"> Afficher les enteprise</button>  </a> </br>
+        <a href="{% url 'affich_employes'  %}"  > <button type="button" class="btn btn-secondary"> Afficher les employes</button>  </a> </br>
+    </body>
+</html>
